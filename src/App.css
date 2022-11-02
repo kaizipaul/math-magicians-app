@@ -12,7 +12,19 @@ body {
   padding: 0;
   margin: 0;
   background: linear-gradient(to right, #0c0f13, #1e1f1f);
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.calculator-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator-section h3 {
+  color: white;
+  width: 50%;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .calculator-grid {
@@ -22,6 +34,7 @@ body {
   min-height: 100vh;
   grid-template-columns: repeat(4, 150px);
   grid-template-rows: minmax(120px, auto) repeat(5, 90px);
+  padding: 0 1rem 2.5rem;
 }
 
 .calculator-grid > button {
@@ -29,11 +42,11 @@ body {
   font-size: 1.5rem;
   border: 1px solid white;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .calculator-grid > button:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .span-two {
@@ -56,4 +69,54 @@ body {
 
 .calculator-grid .operation {
   background-color: orange;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(240, 239, 239, 0.7) 0 0 0 1px;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  gap: 8px;
+  color: white;
+  padding: 3rem 2.5rem;
+  margin: 0 1.5rem;
+}
+
+.home-section img {
+  height: 35%;
+  width: 35%;
+}
+
+.Links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .line {
+  border-left: 2px solid white;
+  height: 1rem;
+}
+
+.quotes-section {
+  color: white;
+  padding: 3rem 2.5rem;
+  font-size: 1.2rem;
 }
