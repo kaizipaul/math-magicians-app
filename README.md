@@ -10,9 +10,9 @@
 - React
 - Webpack
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://kaizipaul-math-magicians.netlify.app/)
 
 ## Authors
 
